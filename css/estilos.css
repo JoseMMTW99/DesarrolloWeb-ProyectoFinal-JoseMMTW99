@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Questrial', sans-serif;
 }
@@ -190,6 +190,81 @@ form div div{
     margin-right: 5%;
 }
 
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 978px){
+    header{
+        height: 0px;
+        font-size: 16px;
+    }
+    .titulos{
+        font-size: 30px;
+        margin-top: 10%;
+    }
+    main{
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+    footer{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .contenedorindex{
+        padding-top: 20%;
+        height: 500px;
+    }
+    .contenedorsm{
+        padding-top: 20%;
+        display: grid;
+        grid-template-areas:
+                            "item1sm"
+                            "item2sm";
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px;
+    }
+    .contenedormamc{
+        padding-top: 25%;
+        display: grid;
+        grid-template-areas: 
+                            "item1mamc"
+                            "item2mamc";
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px;
+    }
+    .contenedorhobbies{
+        padding-top: 20%;
+        width: auto;
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+                            "item1h"
+                            "item2h"
+                            "item3h";
+        grid-template-columns: 1fr;
+        grid-template-rows: 160px 160px 160px;
+    }
+    .formulario{
+        font-size: 25px;
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    input{
+        font-size: 25px;
+    }
+    textarea{
+        font-size: 25px;
+    }
+    .textarea{
+        padding: 0px;
+    }
+    .formbottoms{
+        padding-top: 10px;
+        font-size: 20px;
+    }
+}
 /* Mobile */
 @media only screen and (max-width: 480px){
     header{
@@ -268,80 +343,3 @@ form div div{
         font-size: 16px;
     }
 }
-/* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 978px){
-    header{
-        height: 0px;
-        font-size: 16px;
-    }
-    .titulos{
-        font-size: 30px;
-        margin-top: 10%;
-    }
-    main{
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-    }
-    footer{
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-    .contenedorindex{
-        padding-top: 20%;
-        height: 500px;
-    }
-    .contenedorsm{
-        padding-top: 20%;
-        display: grid;
-        grid-template-areas:
-                            "item1sm"
-                            "item2sm";
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px 250px;
-    }
-    .contenedormamc{
-        padding-top: 25%;
-        display: grid;
-        grid-template-areas: 
-                            "item1mamc"
-                            "item2mamc";
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px 250px;
-    }
-    .contenedorhobbies{
-        padding-top: 20%;
-        width: auto;
-        margin: auto;
-        display: grid;
-        grid-template-areas:
-                            "item1h"
-                            "item2h"
-                            "item3h";
-        grid-template-columns: 1fr;
-        grid-template-rows: 160px 160px 160px;
-    }
-    .formulario{
-        font-size: 25px;
-        margin: auto;
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-    }
-    input{
-        font-size: 25px;
-    }
-    textarea{
-        font-size: 25px;
-    }
-    .textarea{
-        padding: 0px;
-    }
-    .formbottoms{
-        padding-top: 10px;
-        font-size: 20px;
-    }
-}
-/* Desktop */
-@media only screen and (min-width: 979px){}
