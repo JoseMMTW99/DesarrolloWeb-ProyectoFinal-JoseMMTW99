@@ -13,8 +13,8 @@
 <body>
     <header class="container-fluid">
         <div class="row">
-            <div class="logo col-6"></div>
-            <nav class="animacionnav col-6">
+            <div class="logo col-3"></div>
+            <nav class="animacionnav col-9 text-end">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./1sobremi.html">Sobre Mí</a></li>
@@ -25,49 +25,46 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div class="titulos">
-            <h1 class="animacionh1">Contactame</h1>
-        </div>
-    <div class="contenedorform">
-        <!-- Inicio Formulario de Contacto -->
-        <form action="enviar.php" method="post" enctype="text/plain" netlify class="formulario">
-            <div>
-                <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="José" required>
-                </div>
-                <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" placeholder="Martínez Terán">
-                </div>
-                <div>
-                <label for="correo electrónico">Correo Electrónico:</label>
-                <input type="email" name="correo electrónico" placeholder="ejemplo@gmail.com" required>
-                </div>
-                <div>
-                <label for="tipo de consulta">Tipo de Consulta:</label>
-                <input type="text" name="tipo de consulta" placeholder="presupuesto página web">
-                </div>
-                <div class="textarea">
-                <textarea name="consulta" id="" cols="30" rows="10" placeholder="escriba su consulta" required></textarea>
-                </div>
-            </div>
-            <div class="formbottoms">
-            <input type="radio" name="tipo de consulta" required class="radioimput">
-            <label for="">Front-End</label>
-            <input type="radio" name="tipo de consulta" required class="radioimput">
-            <label for="">Back-End</label>
-            <input type="radio" name="tipo de consulta" required class="radioimput">
-            <label for="">Full Stack</label>
-            </div>
-            <div class="formbottoms">
-            <input type="submit" value="Enviar" class="formularioimput">
-            <input type="reset" class="formularioimput">
-        </form>
-        </div>
-        <!-- Fin Formulario de Contacto -->
+    <div class="titulos">
+        <h1 class="animacionh1">Contactame</h1>
     </div>
+    <main>
+        <!-- Inicio Formulario de Contacto -->
+        <div class="container containercontactame animacionh1">
+            <form action="enviar.php" method="post" enctype="text/plain" netlify>
+                <div class="form-group">
+                    <div>
+                    <label for="nombre">Nombre:</label>
+                    <input class="form-control" type="text" name="nombre" placeholder="José" required>
+                    </div>
+                    <div>
+                    <label for="apellido">Apellido:</label>
+                    <input class="form-control" type="text" name="apellido" placeholder="Martínez Terán">
+                    </div>
+                    <div>
+                    <label for="correo electrónico">Correo Electrónico:</label>
+                    <input class="form-control" type="email" name="correo electrónico" placeholder="ejemplo@gmail.com" required>
+                    </div>
+                    <div>
+                    <label for="tipo de consulta">Tipo de Consulta:</label>
+                    <input class="form-control" type="text" name="tipo de consulta" placeholder="presupuesto página web">
+                    </div>
+                    <div class="textarea">
+                    <textarea class="form-control" name="consulta" id="" cols="30" rows="10" placeholder="escriba su consulta" required></textarea>
+                    </div>
+                </div>
+                <div class="formbottoms">
+                <input type="radio" name="tipo de consulta" required class="radioimput">
+                <label for="">Front-End</label>
+                <input type="radio" name="tipo de consulta" required class="radioimput">
+                <label for="">Back-End</label>
+                <input type="radio" name="tipo de consulta" required class="radioimput">
+                <label for="">Full Stack</label>
+                </div>
+                <input type="submit" value="Enviar" class="formularioimput">
+                <input type="reset" class="formularioimput">
+            </form>
+        </div>
     </main>
     <footer class="animacionfooter">
         <div class="redes">

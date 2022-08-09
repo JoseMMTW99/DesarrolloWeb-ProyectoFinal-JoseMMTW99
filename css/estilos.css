@@ -34,7 +34,7 @@ li a:hover{
     color: grey;
 }
 main{
-    height: calc(100vh - 230px);
+    height: calc(100vh - 280px);
     width: 100%;
     background-size: cover;
 }
@@ -42,9 +42,9 @@ main{
     width: 100%;
     margin-top: 20px;
     height: 50px;
-    font-size: 30px;
 }
 h1{
+    font-size: 50px;
     text-align: center;
     padding-top: 50px;
 }
@@ -62,12 +62,6 @@ footer{
     text-align: center;
     margin-top: 100px;
 }
-input{
-    font-size: 25px;
-}
-textarea{
-    font-size: 25px;
-}
 footer .redes i{
     color: white;
     font-size: 40px;
@@ -80,20 +74,6 @@ footer .redes i:hover{
 .imghobbies{
     margin: auto;
     height: 150px;
-}
-.formulario{
-    font-size: 35px;
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-form div{
-    text-align: center;
-}
-form div div{
-    width: 100%;
 }
 .radioimput{
     cursor: pointer;
@@ -108,48 +88,13 @@ form div div{
     color: grey;
 }
 .textarea{
-    padding: 20px;
+    padding: 16px;
 }
 
 .item{
     background-color: blue;
 }
 
-.contenedorindex{
-    height: 750px;
-    border: 3px;
-    padding-top: 7%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.contenedorsm{
-    height: 650px;
-    border: 3px;
-    padding-top: 7%;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: grid;
-    grid-template-areas:
-                        "item1sb item2sb";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 550px;
-    grid-column-gap: 2%;
-    grid-row-gap: 5%;
-}
-.contenedormamc{
-    height: 650px;
-    border: 3px;
-    padding-top: 7%;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: grid;
-    grid-template-areas:
-                        "item1sb item2sb";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 550px;
-    grid-column-gap: 2%;
-    grid-row-gap: 5%;
-}
 .contenedorhobbies{
     height: 650px;
     border: 3px;
@@ -182,167 +127,31 @@ form div div{
     background-position: center;
     grid-area: item3h;
 }
-.contenedorform{
+
+.container{
     height: 650px;
     border: 3px;
-    padding-top: 7%;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-top: 150px;
+    text-align: center;
+}
+.containercontactame{
+    height: 650px;
+    border: 3px;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+}
+label{
+    font-size: 20px;
+}
+input{
+    font-size: 20px;
+}
+.aficiones{
+    height: 200px;
 }
 
-/* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 978px){
-    header{
-        height: 0px;
-        font-size: 16px;
-    }
-    .titulos{
-        font-size: 30px;
-        margin-top: 10%;
-    }
-    main{
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-    }
-    footer{
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-    .contenedorindex{
-        padding-top: 20%;
-        height: 500px;
-    }
-    .contenedorsm{
-        padding-top: 20%;
-        display: grid;
-        grid-template-areas:
-                            "item1sm"
-                            "item2sm";
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px 250px;
-    }
-    .contenedormamc{
-        padding-top: 25%;
-        display: grid;
-        grid-template-areas: 
-                            "item1mamc"
-                            "item2mamc";
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px 250px;
-    }
-    .contenedorhobbies{
-        padding-top: 20%;
-        width: auto;
-        margin: auto;
-        display: grid;
-        grid-template-areas:
-                            "item1h"
-                            "item2h"
-                            "item3h";
-        grid-template-columns: 1fr;
-        grid-template-rows: 160px 160px 160px;
-    }
-    .formulario{
-        font-size: 25px;
-        margin: auto;
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-    }
-    input{
-        font-size: 25px;
-    }
-    textarea{
-        font-size: 25px;
-    }
-    .textarea{
-        padding: 0px;
-    }
-    .formbottoms{
-        padding-top: 10px;
-        font-size: 20px;
-    }
-}
-/* Mobile */
-@media only screen and (max-width: 480px){
-    header{
-        height: 0px;
-        font-size: 16px;
-        display: flex;
-        justify-content: flex-start;
-        text-decoration: none;
-    }
-    .titulos{
-        font-size: 20px;
-        margin-top: 20%;
-    }
-    main{
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-    }
-    footer{
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-    .contenedorindex{
-        padding-top: 20%;
-        height: 300px;
-    }
-    .contenedorsm{
-        padding-top: 20%;
-        display: grid;
-        grid-template-areas:
-                            "item1sm"
-                            "item2sm";
-        grid-template-columns: 1fr;
-        grid-template-rows: 180px 180px;
-    }
-    .contenedormamc{
-        padding-top: 25%;
-        display: grid;
-        grid-template-areas: 
-                            "item1mamc"
-                            "item2mamc";
-        grid-template-columns: 1fr;
-        grid-template-rows: 180px 180px;
-    }
-    .contenedorhobbies{
-        padding-top: 20%;
-        width: auto;
-        margin: auto;
-        display: grid;
-        grid-template-areas:
-                            "item1h"
-                            "item2h"
-                            "item3h";
-        grid-template-columns: 1fr;
-        grid-template-rows: 120px 120px 120px;
-    }
-    .formulario{
-        font-size: 20px;
-        margin: auto;
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-    }
-    input{
-        font-size: 20px;
-    }
-    textarea{
-        font-size: 20px;
-    }
-    .textarea{
-        padding: 0px;
-    }
-    .formbottoms{
-        padding-top: 10px;
-        font-size: 16px;
-    }
-}
 
 .animacionnav{
     animation-name: animacionnav;
@@ -402,16 +211,10 @@ form div div{
     }
 }
 
-header nav ul{
-    transition: all 2s;
-}
-header nav ul:hover{
-    transform: scale(1.1);
-}
 footer{
     transition: all 2s;
 }
 footer:hover{
-    transform: scale(1.25);
+    transform: scale(1.1);
     
 }
