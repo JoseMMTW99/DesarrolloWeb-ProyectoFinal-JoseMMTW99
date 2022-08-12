@@ -29,7 +29,7 @@ li a:hover{
     color: grey;
 }
 main{
-    height: calc(100vh - 280px);
+    min-height: calc(100vh - 180px);
     width: 100%;
     background-size: cover;
 }
@@ -55,7 +55,7 @@ main ul{
 footer{
     color: white;
     text-align: center;
-    margin-top: 100px;
+    transition: all 2s;
 }
 footer .redes i{
     color: white;
@@ -64,6 +64,13 @@ footer .redes i{
 }
 footer .redes i:hover{
     color: grey;
+}
+.animacionfooter{
+    animation-name: animacionfooter;
+    animation-duration: 6s;
+}
+footer:hover{
+    transform: scale(1.1);
 }
 
 .imghobbies{
@@ -124,13 +131,11 @@ footer .redes i:hover{
 }
 
 .container{
-    height: 650px;
     border: 3px;
     padding-top: 150px;
     text-align: center;
 }
 .containercontactame{
-    height: 650px;
     border: 3px;
     padding-top: 100px;
     text-align: center;
@@ -190,10 +195,7 @@ input{
         opacity: 1;
     }
 }
-.animacionfooter{
-    animation-name: animacionfooter;
-    animation-duration: 6s;
-}
+
 @keyframes animacionfooter{
     0%{
         opacity: 0;
@@ -205,15 +207,6 @@ input{
         opacity: 1;
     }
 }
-
-footer{
-    transition: all 2s;
-}
-footer:hover{
-    transform: scale(1.1);
-    
-}
-
 
 .enlace{
     position: absolute;
@@ -263,7 +256,7 @@ li a.active, li a:hover{
         font-size: 16px;
     }
 }
-@media (max-width: 850px){
+@media (max-width: 900px){
     .checkbtn{
         display: block;
     }
@@ -292,5 +285,11 @@ li a.active, li a:hover{
     }
     #check:checked ~ul{
         left: 0;
+    }
+}
+
+@media (max-width: 767px){
+    .footeraficiones{
+        margin-bottom: 20px;
     }
 }
