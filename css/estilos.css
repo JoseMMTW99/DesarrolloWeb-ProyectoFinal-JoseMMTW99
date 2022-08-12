@@ -293,3 +293,6 @@ li a.active, li a:hover{
         margin-bottom: 20px;
     }
 }
+.img-adl{
+    max-height: 142px;
+}
