@@ -97,20 +97,6 @@ footer:hover{
     background-color: blue;
 }
 
-.contenedorhobbies{
-    height: 650px;
-    border: 3px;
-    padding-top: 7%;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: grid;
-    grid-template-areas:
-                        "item1h item2h item3h";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 550px;
-    grid-column-gap: 2%;
-    grid-row-gap: 5%;
-}
 .item1h{
     background-image: url(../img/1.futbol.jpg);
     background-size: cover;
@@ -131,12 +117,10 @@ footer:hover{
 }
 
 .container{
-    border: 3px;
     padding-top: 150px;
     text-align: center;
 }
 .containercontactame{
-    border: 3px;
     padding-top: 100px;
     text-align: center;
     margin: auto;
@@ -292,7 +276,4 @@ li a.active, li a:hover{
     .footeraficiones{
         margin-bottom: 20px;
     }
-}
-.img-adl{
-    max-height: 142px;
 }
