@@ -137,22 +137,7 @@ input{
 }
 
 
-.animacionnav{
-    animation-name: animacionnav;
-    animation-duration: 5s;
-}
-@keyframes animacionnav{
-    0%{
-        opacity: 0;
-    }
-    25%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-.animacionh1{
+.animacion1{
     animation-name: animacionh1;
     animation-duration: 5s;
 }
@@ -164,7 +149,7 @@ input{
         opacity: 1;
     }
 }
-.animacionh2{
+.animacion2{
     animation-name: animacionh2;
     animation-duration: 5s;
 }
@@ -172,7 +157,7 @@ input{
     0%{
         opacity: 0;
     }
-    10%{
+    20%{
         opacity: 0;
     }
     100%{
@@ -184,7 +169,7 @@ input{
     0%{
         opacity: 0;
     }
-    40%{
+    30%{
         opacity: 0;
     }
     100%{
