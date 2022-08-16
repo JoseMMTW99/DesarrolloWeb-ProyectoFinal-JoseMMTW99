@@ -1,213 +1,295 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Questrial', sans-serif;
+    font-family: "Questrial", sans-serif;
 }
 
-body{
+body {
     min-width: 480px;
     color: white;
     background-image: url(../img/0.fondooscuro1.jpg);
 }
-body ul li{
+
+body ul li {
     margin: 10px;
 }
-header{
+
+header {
     color: white;
     font-size: 20px;
-    height:50px;
+    height: 50px;
     text-align: center;
 }
-li a{
+
+li a {
     color: white;
     text-decoration: none;
 }
-li a:hover{
+
+li a:hover {
     color: grey;
 }
-main{
+
+main {
     min-height: calc(100vh - 180px);
     width: 100%;
     background-size: cover;
 }
-.titulos{
+
+.titulos {
     width: 100%;
     margin-top: 20px;
     height: 50px;
 }
-h1{
+
+h1 {
     font-size: 50px;
     text-align: center;
     padding-top: 50px;
 }
-h2{
+
+h2 {
     color: grey;
     font-size: 30px;
     text-align: center;
 }
-main ul{
+
+main ul {
     padding-top: 100px;
     text-align: center;
 }
-footer{
+
+footer {
     color: white;
     text-align: center;
     transition: all 2s;
 }
-footer .redes i{
+
+footer .redes i {
     color: white;
     font-size: 40px;
     letter-spacing: 15px;
 }
-footer .redes i:hover{
+
+footer .redes i:hover {
     color: grey;
 }
-.animacionfooter{
+
+.animacionfooter {
+    -webkit-animation-name: animacionfooter;
     animation-name: animacionfooter;
+    -webkit-animation-duration: 6s;
     animation-duration: 6s;
 }
-footer:hover{
+
+footer:hover {
     transform: scale(1.1);
 }
 
-.imghobbies{
+.imghobbies {
     margin: auto;
     height: 150px;
 }
-.radioimput{
+
+.radioimput {
     cursor: pointer;
 }
-.formularioimput{
+
+.formularioimput {
     color: white;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
-.formularioimput:hover{
+
+.formularioimput:hover {
     color: grey;
 }
-.textarea{
+
+.textarea {
     padding: 16px;
 }
 
-.item{
+.item {
     background-color: blue;
 }
 
-.item1h{
+.item1h {
     background-image: url(../img/1.futbol.jpg);
     background-size: cover;
     background-position: center;
     grid-area: item1h;
 }
-.item2h{
+
+.item2h {
     background-image: url(../img/2.guitarra.jpg);
     background-size: cover;
     background-position: center;
     grid-area: item2h;
 }
-.item3h{
+
+.item3h {
     background-image: url(../img/3.apdelourdes.jpg);
     background-size: cover;
     background-position: center;
     grid-area: item3h;
 }
 
-.container{
+.container {
     padding-top: 150px;
     text-align: center;
 }
-.containercontactame{
+
+.containercontactame {
     padding-top: 100px;
     text-align: center;
     margin: auto;
     max-width: 600px;
 }
-label{
+
+label {
     font-size: 20px;
 }
-input{
+
+input {
     font-size: 20px;
 }
-.aficiones{
+
+.aficiones {
     height: 200px;
 }
 
-
-.animacion1{
+.animacion1 {
+    -webkit-animation-name: animacionh1;
     animation-name: animacionh1;
+    -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
-@keyframes animacionh1{
-    0%{
+
+@-webkit-keyframes animacionh1 {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-.animacion2{
+
+@keyframes animacionh1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animacion2 {
+    -webkit-animation-name: animacionh2;
     animation-name: animacionh2;
+    -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
-@keyframes animacionh2{
-    0%{
+
+@-webkit-keyframes animacionh2 {
+    0% {
         opacity: 0;
     }
-    20%{
+
+    20% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-@keyframes animacionfooter{
-    0%{
+@keyframes animacionh2 {
+    0% {
         opacity: 0;
     }
-    30%{
+
+    20% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-.enlace{
+@-webkit-keyframes animacionfooter {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animacionfooter {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.enlace {
     position: absolute;
     padding: 20px 50px;
 }
-.logo{
+
+.logo {
     height: 60px;
     float: left;
     margin-left: 15px;
     margin-top: 15px;
 }
-nav ul{
+
+nav ul {
     float: right;
     margin-top: 10px;
     margin-right: 20px;
 }
-nav ul li{
-    display: inline-block; 
+
+nav ul li {
+    display: inline-block;
     line-height: 60px;
     margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     font-size: 20px;
     padding: 7px 13px;
     border-radius: 3px;
 }
-li a.active, li a:hover{
+
+li a.active,
+li a:hover {
     background: black;
-    transition: .5s;
+    transition: 0.5s;
 }
-.checkbtn{
+
+.checkbtn {
     font-size: 30px;
     color: white;
     float: right;
@@ -216,20 +298,23 @@ li a.active, li a:hover{
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     display: none;
 }
 
-@media (max-width: 1100px){
-    nav ul li a{
+@media (max-width: 1100px) {
+    nav ul li a {
         font-size: 16px;
     }
 }
-@media (max-width: 900px){
-    .checkbtn{
+
+@media (max-width: 900px) {
+    .checkbtn {
         display: block;
     }
-    ul{
+
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -237,28 +322,35 @@ li a.active, li a:hover{
         top: 80px;
         left: -100%;
         text-align: center;
-        transition: all .5s;
+        transition: all 0.5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 20 px;
         text-decoration: none;
     }
-    li a:hover, li.active{
+
+    li a:hover,
+    li.active {
         background: none;
         color: gray;
     }
-    #check:checked ~ul{
+
+    #check:checked~ul {
         left: 0;
     }
 }
 
-@media (max-width: 767px){
-    .footeraficiones{
+@media (max-width: 767px) {
+    .footeraficiones {
         margin-bottom: 20px;
     }
 }
+
+/*# sourceMappingURL=estilos.css.map */
