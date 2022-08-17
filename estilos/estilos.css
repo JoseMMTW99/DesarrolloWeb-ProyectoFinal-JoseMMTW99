@@ -13,10 +13,6 @@ body {
     background-image: url(../img/0.fondooscuro1.jpg);
 }
 
-body ul li {
-    margin: 10px;
-}
-
 header {
     color: white;
     font-size: 20px;
@@ -24,25 +20,60 @@ header {
     text-align: center;
 }
 
-li a {
+header nav ul {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+nav ul li a {
     color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
     text-decoration: none;
 }
 
-li a:hover {
+nav ul li a:hover {
     color: grey;
 }
 
-main {
-    min-height: calc(100vh - 180px);
-    width: 100%;
-    background-size: cover;
+nav ul li a.active,
+nav ul li a:hover {
+    background: black;
+    transition: 0.5s;
 }
 
-.titulos {
-    width: 100%;
-    margin-top: 20px;
-    height: 50px;
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 60px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 h1 {
@@ -51,14 +82,56 @@ h1 {
     padding-top: 50px;
 }
 
-h2 {
+.titulos {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+}
+
+main {
+    min-height: calc(100vh - 180px);
+    width: 100%;
+    background-size: cover;
+}
+
+main h2 {
     color: grey;
     font-size: 30px;
     text-align: center;
 }
 
-main ul {
+main .contactame {
     padding-top: 100px;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+}
+
+main .contactame label {
+    font-size: 20px;
+}
+
+main .contactame .radioimput {
+    cursor: pointer;
+}
+
+main .contactame .textarea {
+    padding-top: 25px;
+}
+
+main .contactame .formularioimput {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+main .contactame .formularioimput:hover {
+    color: grey;
+}
+
+.container {
+    padding-top: 150px;
     text-align: center;
 }
 
@@ -78,98 +151,14 @@ footer .redes i:hover {
     color: grey;
 }
 
-.animacionfooter {
-    -webkit-animation-name: animacionfooter;
-    animation-name: animacionfooter;
-    -webkit-animation-duration: 6s;
-    animation-duration: 6s;
-}
-
-footer:hover {
-    transform: scale(1.1);
-}
-
-.imghobbies {
-    margin: auto;
-    height: 150px;
-}
-
-.radioimput {
-    cursor: pointer;
-}
-
-.formularioimput {
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.formularioimput:hover {
-    color: grey;
-}
-
-.textarea {
-    padding: 16px;
-}
-
-.item {
-    background-color: blue;
-}
-
-.item1h {
-    background-image: url(../img/1.futbol.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: item1h;
-}
-
-.item2h {
-    background-image: url(../img/2.guitarra.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: item2h;
-}
-
-.item3h {
-    background-image: url(../img/3.apdelourdes.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: item3h;
-}
-
-.container {
-    padding-top: 150px;
-    text-align: center;
-}
-
-.containercontactame {
-    padding-top: 100px;
-    text-align: center;
-    margin: auto;
-    max-width: 600px;
-}
-
-label {
-    font-size: 20px;
-}
-
-input {
-    font-size: 20px;
-}
-
-.aficiones {
-    height: 200px;
-}
-
 .animacion1 {
-    -webkit-animation-name: animacionh1;
-    animation-name: animacionh1;
+    -webkit-animation-name: animacion1;
+    animation-name: animacion1;
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
 
-@-webkit-keyframes animacionh1 {
+@-webkit-keyframes animacion1 {
     0% {
         opacity: 0;
     }
@@ -179,7 +168,7 @@ input {
     }
 }
 
-@keyframes animacionh1 {
+@keyframes animacion1 {
     0% {
         opacity: 0;
     }
@@ -190,13 +179,13 @@ input {
 }
 
 .animacion2 {
-    -webkit-animation-name: animacionh2;
-    animation-name: animacionh2;
+    -webkit-animation-name: animacion2;
+    animation-name: animacion2;
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
 
-@-webkit-keyframes animacionh2 {
+@-webkit-keyframes animacion2 {
     0% {
         opacity: 0;
     }
@@ -210,7 +199,7 @@ input {
     }
 }
 
-@keyframes animacionh2 {
+@keyframes animacion2 {
     0% {
         opacity: 0;
     }
@@ -222,6 +211,13 @@ input {
     100% {
         opacity: 1;
     }
+}
+
+.animacionfooter {
+    -webkit-animation-name: animacionfooter;
+    animation-name: animacionfooter;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
 }
 
 @-webkit-keyframes animacionfooter {
@@ -252,57 +248,6 @@ input {
     }
 }
 
-.enlace {
-    position: absolute;
-    padding: 20px 50px;
-}
-
-.logo {
-    height: 60px;
-    float: left;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-nav ul {
-    float: right;
-    margin-top: 10px;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 60px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 20px;
-    padding: 7px 13px;
-    border-radius: 3px;
-}
-
-li a.active,
-li a:hover {
-    background: black;
-    transition: 0.5s;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
 @media (max-width: 1100px) {
     nav ul li a {
         font-size: 16px;
@@ -314,7 +259,7 @@ li a:hover {
         display: block;
     }
 
-    ul {
+    nav ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -331,15 +276,15 @@ li a:hover {
         line-height: 30px;
     }
 
-    nav ul li a {
-        font-size: 20 px;
-        text-decoration: none;
-    }
-
-    li a:hover,
-    li.active {
+    nav ul li li a:hover,
+    nav ul li li.active {
         background: none;
         color: gray;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
     }
 
     #check:checked~ul {
