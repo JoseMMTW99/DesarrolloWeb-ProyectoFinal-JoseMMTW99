@@ -82,12 +82,12 @@ main{
     min-height: calc(100vh - 180px);
     width: 100%;
     background-size: cover;
-    h2{
-        color: $color2;
+    .bienvenida{
+        color: $color1;
         font-size: 30px;
         text-align: center;
     }
-    .contactame{
+    .contacto{
         padding-top: 100px;
         text-align: center;
         margin: auto;
