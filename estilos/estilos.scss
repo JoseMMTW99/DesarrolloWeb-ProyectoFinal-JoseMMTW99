@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 $color1: white;
-$color2: grey;
+$color2: #00ffff;
+$color3: #ffa500;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Questrial', sans-serif;
+}
+span{
+    color: $color2;
+}
+.span-2{
+    color: $color3;
 }
 body{
     min-width: 480px;
@@ -38,6 +45,9 @@ nav ul li{
         border-radius: 3px;
         text-decoration: none;
     }
+    .inicio{
+        color: $color3;
+    }
     a:hover{
         color: $color2;
     }
@@ -63,10 +73,10 @@ nav ul li{
     padding: 20px 50px;
 }
 .logo{
-    height: 60px;
+    height: 40px;
     float: left;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 25px;
+    margin-top: 25px;
 }
 h1{
     font-size: 50px;
@@ -78,15 +88,22 @@ h1{
     margin-top: 20px;
     height: 50px;
 }
+.bienvenida-h1{
+    font-size: 24px;
+    padding-top: 180px;
+}
+.main-index{
+    min-height: calc(100vh - 340px);
+    max-width: 750px;
+    font-size: 20px ;
+}
+.adl{
+    text-decoration: none;
+}
 main{
-    min-height: calc(100vh - 180px);
+    min-height: calc(100vh - 210px);
     width: 100%;
     background-size: cover;
-    .bienvenida{
-        color: $color1;
-        font-size: 30px;
-        text-align: center;
-    }
     .contacto{
         padding-top: 100px;
         text-align: center;
@@ -113,10 +130,11 @@ main{
     }
 }
 .container{
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 120px;
 }
 footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: $color1;
     text-align: center;
     transition: all 2s;
@@ -127,7 +145,7 @@ footer{
             letter-spacing: 15px;
         }
         i:hover{
-            color: $color2;
+            color: $color3;
         }
     }
 }
@@ -179,6 +197,12 @@ footer{
     }
 }
 @media (max-width: 900px){
+    .bienvenida-h1{
+        padding-top: 30px;
+    }
+    .bienvenida-p{
+        padding-top: 60px;
+    }
     .checkbtn{
         display: block;
     }
