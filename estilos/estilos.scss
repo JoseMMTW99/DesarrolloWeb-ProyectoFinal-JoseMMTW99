@@ -19,7 +19,7 @@ span{
 body{
     min-width: 480px;
     color: $color1;
-    background-image: url(../img/0.fondooscuro1.jpg);
+    background-image: url(../img/0.fondooscuro2.png);
 }
 header{
     color: $color1;
@@ -68,12 +68,8 @@ nav ul li{
 #check{
     display: none;
 }
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-}
 .logo{
-    height: 40px;
+    height: 30px;
     float: left;
     margin-left: 25px;
     margin-top: 25px;
@@ -146,6 +142,7 @@ footer{
         }
         i:hover{
             color: $color3;
+            transition: 0.5s;
         }
     }
 }
@@ -201,7 +198,7 @@ footer{
         padding-top: 30px;
     }
     .bienvenida-p{
-        padding-top: 60px;
+        padding-top: 50px;
     }
     .checkbtn{
         display: block;
