@@ -24,36 +24,42 @@ body{
 header{
     color: $color1;
     font-size: 20px;
-    height:50px;
+    height:80px;
     text-align: center;
     nav{
+        .logo{
+            height: 40px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
         ul{
             float: right;
             margin-top: 10px;
             margin-right: 20px;
+            li{
+                display: inline-block;
+                line-height: 60px;
+                margin: 0 5px;
+                a{
+                    color: $color1;
+                    font-size: 20px;
+                    padding: 7px 13px;
+                    border-radius: 3px;
+                    text-decoration: none;
+                }
+                .inicio{
+                    color: $color3;
+                }
+                a:hover{
+                    color: $color2;
+                }
+                a.active, a:hover{
+                    background: black;
+                    transition: .5s;
+                }
+            }
         }
-    }
-}
-nav ul li{
-    display: inline-block; 
-    line-height: 60px;
-    margin: 0 5px;
-    a{
-        color: $color1;
-        font-size: 20px;
-        padding: 7px 13px;
-        border-radius: 3px;
-        text-decoration: none;
-    }
-    .inicio{
-        color: $color3;
-    }
-    a:hover{
-        color: $color2;
-    }
-    a.active, a:hover{
-        background: black;
-        transition: .5s;
     }
 }
 .checkbtn{
@@ -68,43 +74,40 @@ nav ul li{
 #check{
     display: none;
 }
-.logo{
-    height: 30px;
-    float: left;
-    margin-left: 25px;
-    margin-top: 25px;
-}
 h1{
     font-size: 50px;
     text-align: center;
-    padding-top: 50px;
 }
 .titulos{
-    width: 100%;
-    margin-top: 20px;
-    height: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
-.bienvenida-h1{
-    font-size: 24px;
-    padding-top: 180px;
-}
-.main-index{
-    min-height: calc(100vh - 340px);
-    max-width: 750px;
-    font-size: 20px ;
-}
-.adl{
-    text-decoration: none;
+.titulo-index{
+    margin-top: 240px;
 }
 main{
-    min-height: calc(100vh - 210px);
+    min-height: calc(100vh - 290px);
     width: 100%;
     background-size: cover;
+    .index{
+        font-size: 20px ;
+    }
+    .sobre-mi{
+        padding-top: 40px;
+    }
+    .proyecciones{
+        padding-top: 20px;
+    }
+    .aficiones{
+        padding-top: 20px;
+        .adl{
+            text-decoration: none;
+        }
+    }
     .contacto{
-        padding-top: 100px;
         text-align: center;
         margin: auto;
-        max-width: 600px;
+        max-width: 500px;
         label{
             font-size: 20px;
         }
@@ -122,15 +125,17 @@ main{
         }
         .formularioimput:hover{
             color: $color2;
+            transition: 0.5s;
         }
     }
 }
-.container{
-    padding-top: 120px;
+.main-index{
+    min-height: calc(100vh - 470px);
+    max-width: 750px;
 }
 footer{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: $color1;
     text-align: center;
     transition: all 2s;
@@ -148,7 +153,7 @@ footer{
 }
 .animacion1{
     animation-name: animacion1;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 @keyframes animacion1{
     0%{
@@ -160,7 +165,7 @@ footer{
 }
 .animacion2{
     animation-name: animacion2;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 @keyframes animacion2{
     0%{
@@ -188,12 +193,7 @@ footer{
         opacity: 1;
     }
 }
-@media (max-width: 1100px){
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-@media (max-width: 900px){
+@media (max-width: 1000px){
     .bienvenida-h1{
         padding-top: 30px;
     }
@@ -207,7 +207,7 @@ footer{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: black;
+        background-color: black;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -217,7 +217,7 @@ footer{
             margin: 50px 0;
             line-height: 30px;
             li a:hover, li.active{
-                background: none;
+                background-color: none;
                 color: gray;
             }
             a{
@@ -228,10 +228,5 @@ footer{
     }
     #check:checked ~ul{
         left: 0;
-    }
-}
-@media (max-width: 767px){
-    .footeraficiones{
-        margin-bottom: 20px;
     }
 }
