@@ -20,6 +20,7 @@ body {
   background-image: url(../img/0.fondooscuro2.png);
 }
 
+/* Inicio estilos header */
 header {
   color: white;
   font-size: 20px;
@@ -29,8 +30,8 @@ header {
 header nav .logo {
   height: 40px;
   float: left;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 header nav ul {
   float: right;
@@ -38,7 +39,6 @@ header nav ul {
   margin-right: 20px;
 }
 header nav ul li {
-  display: inline-block;
   line-height: 60px;
   margin: 0 5px;
 }
@@ -55,9 +55,14 @@ header nav ul li .inicio {
 header nav ul li a:hover {
   color: #00ffff;
 }
-header nav ul li a.active, header nav ul li a:hover {
+header nav ul li a.active,
+header nav ul li a:hover {
   background: black;
   transition: 0.5s;
+}
+
+nav ul li {
+  display: inline-block;
 }
 
 .checkbtn {
@@ -74,6 +79,7 @@ header nav ul li a.active, header nav ul li a:hover {
   display: none;
 }
 
+/* Fin estilos header */
 h1 {
   font-size: 50px;
   text-align: center;
@@ -88,6 +94,7 @@ h1 {
   margin-top: 240px;
 }
 
+/* Inicio estilos Main */
 main {
   min-height: calc(100vh - 290px);
   width: 100%;
@@ -138,6 +145,8 @@ main .contacto .formularioimput:hover {
   max-width: 750px;
 }
 
+/* Fin estilos Main */
+/* Inicio estilos Footer */
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -155,6 +164,8 @@ footer .redes i:hover {
   transition: 0.5s;
 }
 
+/* Fin estilos Footer */
+/* Inicio Animaciones */
 .animacion1 {
   -webkit-animation-name: animacion1;
           animation-name: animacion1;
@@ -239,6 +250,8 @@ footer .redes i:hover {
     opacity: 1;
   }
 }
+/* Fin Animaciones */
+/* Inicio @media query */
 @media (max-width: 1000px) {
   .bienvenida-h1 {
     padding-top: 30px;
@@ -264,7 +277,8 @@ footer .redes i:hover {
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li li a:hover, nav ul li li.active {
+  nav ul li li a:hover,
+nav ul li li.active {
     background-color: none;
     color: gray;
   }
@@ -275,4 +289,5 @@ footer .redes i:hover {
   #check:checked ~ ul {
     left: 0;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+/* Fin @media query *//*# sourceMappingURL=estilos.css.map */

@@ -21,24 +21,24 @@ body{
     color: $color1;
     background-image: url(../img/0.fondooscuro2.png);
 }
+/* Inicio estilos header */
 header{
     color: $color1;
     font-size: 20px;
-    height:80px;
+    height: 80px;
     text-align: center;
     nav{
         .logo{
             height: 40px;
             float: left;
-            margin-left: 20px;
-            margin-top: 20px;
+            margin-left: 15px;
+            margin-top: 15px;
         }
         ul{
             float: right;
             margin-top: 10px;
             margin-right: 20px;
             li{
-                display: inline-block;
                 line-height: 60px;
                 margin: 0 5px;
                 a{
@@ -54,13 +54,17 @@ header{
                 a:hover{
                     color: $color2;
                 }
-                a.active, a:hover{
+                a.active,
+                a:hover{
                     background: black;
                     transition: .5s;
                 }
             }
         }
     }
+}
+nav ul li{
+    display: inline-block;
 }
 .checkbtn{
     font-size: 30px;
@@ -74,7 +78,8 @@ header{
 #check{
     display: none;
 }
-h1{
+/* Fin estilos header */
+h1 {
     font-size: 50px;
     text-align: center;
 }
@@ -85,12 +90,13 @@ h1{
 .titulo-index{
     margin-top: 240px;
 }
+/* Inicio estilos Main */
 main{
     min-height: calc(100vh - 290px);
     width: 100%;
     background-size: cover;
     .index{
-        font-size: 20px ;
+        font-size: 20px;
     }
     .sobre-mi{
         padding-top: 40px;
@@ -133,6 +139,8 @@ main{
     min-height: calc(100vh - 470px);
     max-width: 750px;
 }
+/* Fin estilos Main */
+/* Inicio estilos Footer */
 footer{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -151,6 +159,8 @@ footer{
         }
     }
 }
+/* Fin estilos Footer */
+/* Inicio Animaciones */
 .animacion1{
     animation-name: animacion1;
     animation-duration: 4s;
@@ -193,6 +203,8 @@ footer{
         opacity: 1;
     }
 }
+/* Fin Animaciones */
+/* Inicio @media query */
 @media (max-width: 1000px){
     .bienvenida-h1{
         padding-top: 30px;
@@ -216,7 +228,8 @@ footer{
             display: block;
             margin: 50px 0;
             line-height: 30px;
-            li a:hover, li.active{
+            li a:hover,
+            li.active{
                 background-color: none;
                 color: gray;
             }
@@ -226,7 +239,8 @@ footer{
             }
         }
     }
-    #check:checked ~ul{
+    #check:checked~ul{
         left: 0;
     }
 }
+/* Fin @media query */
