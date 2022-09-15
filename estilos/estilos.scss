@@ -69,10 +69,10 @@ nav ul li{
     display: none;
 }
 .logo{
-    height: 30px;
+    height: 40px;
     float: left;
-    margin-left: 25px;
-    margin-top: 25px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 h1{
     font-size: 50px;
@@ -122,10 +122,17 @@ main{
         }
         .formularioimput:hover{
             color: $color2;
+            transition: 0.5s;
         }
     }
 }
 .container{
+    padding-top: 80px;
+}
+.container-index{
+    padding-top: 120px;
+}
+.container-aficiones{
     padding-top: 120px;
 }
 footer{
@@ -148,7 +155,7 @@ footer{
 }
 .animacion1{
     animation-name: animacion1;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 @keyframes animacion1{
     0%{
@@ -160,7 +167,7 @@ footer{
 }
 .animacion2{
     animation-name: animacion2;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 @keyframes animacion2{
     0%{

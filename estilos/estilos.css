@@ -70,10 +70,10 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .logo {
-  height: 30px;
+  height: 40px;
   float: left;
-  margin-left: 25px;
-  margin-top: 25px;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 h1 {
@@ -131,9 +131,18 @@ main .contacto .formularioimput {
 }
 main .contacto .formularioimput:hover {
   color: #00ffff;
+  transition: 0.5s;
 }
 
 .container {
+  padding-top: 80px;
+}
+
+.container-index {
+  padding-top: 120px;
+}
+
+.container-aficiones {
   padding-top: 120px;
 }
 
@@ -157,8 +166,8 @@ footer .redes i:hover {
 .animacion1 {
   -webkit-animation-name: animacion1;
           animation-name: animacion1;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes animacion1 {
@@ -181,8 +190,8 @@ footer .redes i:hover {
 .animacion2 {
   -webkit-animation-name: animacion2;
           animation-name: animacion2;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes animacion2 {
