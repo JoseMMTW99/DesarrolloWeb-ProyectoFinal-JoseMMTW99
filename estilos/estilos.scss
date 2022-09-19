@@ -224,11 +224,16 @@ footer{
 /* Fin Animaciones */
 /* Inicio @media query */
 @media (max-width: 1000px){
-    .bienvenida-h1{
-        padding-top: 30px;
+    .titulo-index{
+        padding-top: 100px;
     }
     .bienvenida-p{
-        padding-top: 50px;
+        padding-top: 20px;
+    }
+    main{
+        .sobre-mi{
+            padding-top: 0px;
+        }
     }
     .checkbtn{
         display: block;
