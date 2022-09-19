@@ -3,6 +3,8 @@
 $color1: white;
 $color2: #00ffff;
 $color3: #ffa500;
+$color4: green;
+$color5: red;
 
 *{
     margin: 0;
@@ -15,6 +17,12 @@ span{
 }
 .span-2{
     color: $color3;
+}
+.span-3{
+    color: $color4;
+}
+.span-4{
+    color: $color5;
 }
 body{
     min-width: 480px;
@@ -84,35 +92,37 @@ h1 {
     text-align: center;
 }
 .titulos{
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding: 30px;
 }
 .titulo-index{
-    margin-top: 240px;
+    padding-top: 240px;
 }
 /* Inicio estilos Main */
 main{
-    min-height: calc(100vh - 290px);
+    min-height: calc(100vh - 310px);
     width: 100%;
     background-size: cover;
     .index{
         font-size: 20px;
     }
     .sobre-mi{
-        padding-top: 40px;
+        padding-top: 60px;
+        overflow: hidden;
     }
     .proyecciones{
-        padding-top: 20px;
+        padding: 20px;
+        overflow: hidden;
     }
     .aficiones{
         padding-top: 20px;
+        overflow: hidden;
         .adl{
             text-decoration: none;
         }
     }
     .contacto{
+        overflow: hidden;
         text-align: center;
-        margin: auto;
         max-width: 500px;
         label{
             font-size: 20px;
@@ -136,14 +146,13 @@ main{
     }
 }
 .main-index{
-    min-height: calc(100vh - 470px);
+    min-height: calc(100vh - 490px);
     max-width: 750px;
 }
 /* Fin estilos Main */
 /* Inicio estilos Footer */
 footer{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 30px;
     color: $color1;
     text-align: center;
     transition: all 2s;
@@ -169,6 +178,9 @@ footer{
     0%{
         opacity: 0;
     }
+    20%{
+        opacity: 0;
+    }
     100%{
         opacity: 1;
     }
@@ -181,7 +193,7 @@ footer{
     0%{
         opacity: 0;
     }
-    20%{
+    50%{
         opacity: 0;
     }
     100%{
@@ -190,18 +202,21 @@ footer{
 }
 .animacionfooter{
     animation-name: animacionfooter;
-    animation-duration: 6s;
+    animation-duration: 4s;
 }
 @keyframes animacionfooter{
     0%{
         opacity: 0;
     }
-    30%{
+    75%{
         opacity: 0;
     }
     100%{
         opacity: 1;
     }
+}
+.animate__delay-15s{
+    animation-delay: 15s;
 }
 /* Fin Animaciones */
 /* Inicio @media query */
