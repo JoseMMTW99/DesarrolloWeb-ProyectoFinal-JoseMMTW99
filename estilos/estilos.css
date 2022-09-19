@@ -276,6 +276,14 @@ footer .redes i:hover {
 
 /* Fin Animaciones */
 /* Inicio @media query */
+@media (max-width: 1366px) and (min-width: 1001px) {
+  .titulo-index {
+    padding-top: 160px;
+  }
+  main .sobre-mi {
+    padding-top: 30px;
+  }
+}
 @media (max-width: 1000px) {
   .titulo-index {
     padding-top: 100px;
