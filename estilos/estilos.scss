@@ -225,11 +225,11 @@ footer{
 /* Inicio @media query */
 @media (max-width: 1366px) and (min-width: 1001px){
     .titulo-index{
-    padding-top: 160px;
+    padding-top: 120px;
     }
     main{
         .sobre-mi{
-            padding-top: 30px;
+            padding-top: 0px;
         }
     }
 }
