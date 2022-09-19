@@ -91,10 +91,12 @@ nav ul li {
 h1 {
   font-size: 50px;
   text-align: center;
+  overflow: hidden;
 }
 
 .titulos {
   padding: 30px;
+  overflow: hidden;
 }
 
 .titulo-index {
@@ -103,8 +105,7 @@ h1 {
 
 /* Inicio estilos Main */
 main {
-  min-height: calc(100vh - 310px);
-  width: 100%;
+  min-height: calc(100vh - 321px);
   background-size: cover;
 }
 main .index {
@@ -112,11 +113,10 @@ main .index {
 }
 main .sobre-mi {
   padding-top: 60px;
-  overflow: hidden;
 }
 main .proyecciones {
-  padding: 20px;
   overflow: hidden;
+  padding: 0px;
 }
 main .aficiones {
   padding-top: 20px;
@@ -151,8 +151,12 @@ main .contacto .formularioimput:hover {
 }
 
 .main-index {
-  min-height: calc(100vh - 490px);
+  min-height: calc(100vh - 501px);
   max-width: 750px;
+}
+
+.container {
+  overflow: hidden;
 }
 
 /* Fin estilos Main */
@@ -161,9 +165,9 @@ footer {
   padding: 30px;
   color: white;
   text-align: center;
-  transition: all 2s;
 }
 footer .redes i {
+  overflow: hidden;
   color: white;
   font-size: 40px;
   letter-spacing: 15px;
@@ -283,6 +287,7 @@ footer .redes i:hover {
     display: block;
   }
   nav ul {
+    z-index: 1000;
     position: fixed;
     width: 100%;
     height: 100vh;

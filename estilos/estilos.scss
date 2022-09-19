@@ -90,30 +90,30 @@ nav ul li{
 h1 {
     font-size: 50px;
     text-align: center;
+    overflow: hidden;
 }
 .titulos{
     padding: 30px;
+    overflow: hidden;
 }
 .titulo-index{
     padding-top: 240px;
 }
 /* Inicio estilos Main */
 main{
-    min-height: calc(100vh - 310px);
-    width: 100%;
+    min-height: calc(100vh - 321px);
     background-size: cover;
     .index{
         font-size: 20px;
     }
     .sobre-mi{
         padding-top: 60px;
-        overflow: hidden;
     }
     .proyecciones{
-        padding: 20px;
         overflow: hidden;
+        padding: 0px;
     }
-    .aficiones{
+    .aficiones{ 
         padding-top: 20px;
         overflow: hidden;
         .adl{
@@ -146,8 +146,11 @@ main{
     }
 }
 .main-index{
-    min-height: calc(100vh - 490px);
+    min-height: calc(100vh - 501px);
     max-width: 750px;
+}
+.container{
+    overflow: hidden;
 }
 /* Fin estilos Main */
 /* Inicio estilos Footer */
@@ -155,9 +158,9 @@ footer{
     padding: 30px;
     color: $color1;
     text-align: center;
-    transition: all 2s;
     .redes{
         i{
+            overflow: hidden;
             color: $color1;
             font-size: 40px;
             letter-spacing: 15px;
@@ -231,6 +234,7 @@ footer{
         display: block;
     }
     nav ul{
+        z-index: 1000;
         position: fixed;
         width: 100%;
         height: 100vh;
